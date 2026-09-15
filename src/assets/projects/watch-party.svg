@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="w-amb" cx="50%" cy="42%" r="60%">
+      <stop offset="0" stop-color="#5B76FF" stop-opacity="0.24"/>
+      <stop offset="55%" stop-color="#5B76FF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0B0D12" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="w-sphere" cx="36%" cy="30%" r="78%">
+      <stop offset="0" stop-color="#9DB0FF"/>
+      <stop offset="45%" stop-color="#5B76FF"/>
+      <stop offset="100%" stop-color="#1B2470"/>
+    </radialGradient>
+    <radialGradient id="w-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#5B76FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#5B76FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="w-panel" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#2A3040"/>
+      <stop offset="1" stop-color="#141822"/>
+    </linearGradient>
+    <linearGradient id="w-panel-lit" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#43506F"/>
+      <stop offset="1" stop-color="#1B2130"/>
+    </linearGradient>
+    <filter id="w-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="w-blur-sm" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0B0D12"/>
+  <rect width="1600" height="900" fill="url(#w-amb)"/>
+
+  <!-- the orbit that binds every screen to the same moment -->
+  <g transform="translate(800 470)">
+    <ellipse rx="470" ry="182" fill="none" stroke="#F2F1ED" stroke-opacity="0.12" stroke-width="2"/>
+    <ellipse rx="470" ry="182" fill="none" stroke="#5B76FF" stroke-opacity="0.45" stroke-width="3"
+             stroke-dasharray="260 1600" stroke-linecap="round"/>
+    <ellipse rx="336" ry="130" fill="none" stroke="#F2F1ED" stroke-opacity="0.07" stroke-width="2"/>
+  </g>
+
+  <ellipse cx="800" cy="726" rx="300" ry="30" fill="#000" opacity="0.6" filter="url(#w-soft)"/>
+
+  <!-- ── satellite screens, each showing the same frame ── -->
+  <g transform="translate(330 400) rotate(-9)">
+    <rect x="8" y="12" width="210" height="132" rx="16" fill="#000" opacity="0.55" filter="url(#w-blur-sm)"/>
+    <rect width="210" height="132" rx="16" fill="url(#w-panel)" stroke="#F2F1ED" stroke-opacity="0.14"/>
+    <rect x="14" y="14" width="182" height="104" rx="9" fill="#5B76FF" opacity="0.2"/>
+    <path d="M96 52l30 18-30 18z" fill="#F2F1ED" opacity="0.7"/>
+  </g>
+
+  <g transform="translate(1078 398) rotate(9)">
+    <rect x="8" y="12" width="210" height="132" rx="16" fill="#000" opacity="0.55" filter="url(#w-blur-sm)"/>
+    <rect width="210" height="132" rx="16" fill="url(#w-panel)" stroke="#F2F1ED" stroke-opacity="0.14"/>
+    <rect x="14" y="14" width="182" height="104" rx="9" fill="#5B76FF" opacity="0.2"/>
+    <path d="M96 52l30 18-30 18z" fill="#F2F1ED" opacity="0.7"/>
+  </g>
+
+  <g transform="translate(560 592) rotate(-4)">
+    <rect x="8" y="12" width="188" height="118" rx="15" fill="#000" opacity="0.55" filter="url(#w-blur-sm)"/>
+    <rect width="188" height="118" rx="15" fill="url(#w-panel-lit)" stroke="#F2F1ED" stroke-opacity="0.16"/>
+    <rect x="13" y="13" width="162" height="92" rx="8" fill="#5B76FF" opacity="0.26"/>
+    <path d="M84 46l27 16-27 16z" fill="#F2F1ED" opacity="0.8"/>
+  </g>
+
+  <g transform="translate(852 604) rotate(4)">
+    <rect x="8" y="12" width="188" height="118" rx="15" fill="#000" opacity="0.55" filter="url(#w-blur-sm)"/>
+    <rect width="188" height="118" rx="15" fill="url(#w-panel-lit)" stroke="#F2F1ED" stroke-opacity="0.16"/>
+    <rect x="13" y="13" width="162" height="92" rx="8" fill="#5B76FF" opacity="0.26"/>
+    <path d="M84 46l27 16-27 16z" fill="#F2F1ED" opacity="0.8"/>
+  </g>
+
+  <!-- ── the single source of truth ── -->
+  <g transform="translate(800 372)">
+    <circle r="230" fill="url(#w-glow)" opacity="0.65"/>
+    <ellipse cy="196" rx="150" ry="20" fill="#000" opacity="0.55" filter="url(#w-blur-sm)"/>
+    <circle r="152" fill="url(#w-sphere)"/>
+    <circle r="152" fill="none" stroke="#A9B8FF" stroke-opacity="0.5" stroke-width="2"/>
+    <!-- specular highlight gives the sphere its form -->
+    <ellipse cx="-52" cy="-62" rx="56" ry="38" fill="#FFFFFF" opacity="0.28" transform="rotate(-28)"/>
+    <ellipse cx="46" cy="72" rx="96" ry="52" fill="#0B0D12" opacity="0.2"/>
+    <path d="M-34 -50 L62 0 L-34 50 Z" fill="#F2F1ED" opacity="0.95"/>
+  </g>
+
+  <!-- sync spokes: every screen tied back to the centre -->
+  <g stroke="#5B76FF" stroke-opacity="0.4" stroke-width="2" fill="none">
+    <path d="M652 400 C 560 400, 500 430, 448 452"/>
+    <path d="M948 400 C 1040 400, 1100 428, 1152 450"/>
+    <path d="M718 510 C 700 560, 680 590, 660 618"/>
+    <path d="M884 512 C 902 560, 920 590, 940 628"/>
+  </g>
+</svg>

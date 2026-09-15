@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="e-amb" cx="50%" cy="40%" r="62%">
+      <stop offset="0" stop-color="#5B76FF" stop-opacity="0.18"/>
+      <stop offset="55%" stop-color="#5B76FF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0B0D12" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="e-coin" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6A6E78"/>
+      <stop offset="0.35" stop-color="#C9CCD4"/>
+      <stop offset="0.62" stop-color="#8D919B"/>
+      <stop offset="1" stop-color="#4E525B"/>
+    </linearGradient>
+    <linearGradient id="e-coin-top" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#EDEFF4"/>
+      <stop offset="1" stop-color="#A2A6B0"/>
+    </linearGradient>
+    <linearGradient id="e-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2A3AAF"/>
+      <stop offset="0.35" stop-color="#8598FF"/>
+      <stop offset="0.62" stop-color="#4A62E0"/>
+      <stop offset="1" stop-color="#222E86"/>
+    </linearGradient>
+    <linearGradient id="e-accent-top" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#B9C5FF"/>
+      <stop offset="1" stop-color="#4A62E0"/>
+    </linearGradient>
+    <linearGradient id="e-card" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#F7F6F2"/>
+      <stop offset="1" stop-color="#B4B2AB"/>
+    </linearGradient>
+    <filter id="e-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="e-blur-sm" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0B0D12"/>
+  <rect width="1600" height="900" fill="url(#e-amb)"/>
+
+  <ellipse cx="820" cy="726" rx="420" ry="36" fill="#000" opacity="0.6" filter="url(#e-soft)"/>
+
+  <!-- the trend the stacks describe -->
+  <path d="M430 448 C 560 470, 610 360, 720 372 C 830 384, 880 250, 1010 286 C 1110 314, 1150 300, 1210 268"
+        fill="none" stroke="#5B76FF" stroke-opacity="0.45" stroke-width="3" stroke-linecap="round"
+        stroke-dasharray="14 16"/>
+
+  <!-- ── coin stacks: a month of spending, by category ── -->
+  <g>
+    <!-- stack 1 -->
+    <g transform="translate(430 700)">
+      <ellipse cy="14" rx="82" ry="18" fill="#000" opacity="0.5" filter="url(#e-blur-sm)"/>
+      <g>
+        <path d="M-72 0 v-118 a72 16 0 0 0 144 0 V0 a72 16 0 0 1 -144 0 z" fill="url(#e-coin)"/>
+        <g stroke="#0B0D12" stroke-opacity="0.35" stroke-width="2" fill="none">
+          <path d="M-72 -30 a72 16 0 0 0 144 0"/>
+          <path d="M-72 -60 a72 16 0 0 0 144 0"/>
+          <path d="M-72 -90 a72 16 0 0 0 144 0"/>
+        </g>
+        <ellipse cy="-118" rx="72" ry="16" fill="url(#e-coin-top)"/>
+        <ellipse cy="-118" rx="46" ry="10" fill="#0B0D12" opacity="0.12"/>
+      </g>
+    </g>
+
+    <!-- stack 2 -->
+    <g transform="translate(610 700)">
+      <ellipse cy="14" rx="82" ry="18" fill="#000" opacity="0.5" filter="url(#e-blur-sm)"/>
+      <path d="M-72 0 v-206 a72 16 0 0 0 144 0 V0 a72 16 0 0 1 -144 0 z" fill="url(#e-coin)"/>
+      <g stroke="#0B0D12" stroke-opacity="0.35" stroke-width="2" fill="none">
+        <path d="M-72 -30 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -60 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -90 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -120 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -150 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -180 a72 16 0 0 0 144 0"/>
+      </g>
+      <ellipse cy="-206" rx="72" ry="16" fill="url(#e-coin-top)"/>
+      <ellipse cy="-206" rx="46" ry="10" fill="#0B0D12" opacity="0.12"/>
+    </g>
+
+    <!-- stack 3 — the category that stands out -->
+    <g transform="translate(790 700)">
+      <ellipse cy="14" rx="86" ry="19" fill="#000" opacity="0.55" filter="url(#e-blur-sm)"/>
+      <ellipse cy="10" rx="120" ry="30" fill="#5B76FF" opacity="0.22" filter="url(#e-blur-sm)"/>
+      <path d="M-72 0 v-320 a72 16 0 0 0 144 0 V0 a72 16 0 0 1 -144 0 z" fill="url(#e-accent)"/>
+      <g stroke="#0B0D12" stroke-opacity="0.3" stroke-width="2" fill="none">
+        <path d="M-72 -40 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -80 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -120 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -160 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -200 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -240 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -280 a72 16 0 0 0 144 0"/>
+      </g>
+      <ellipse cy="-320" rx="72" ry="16" fill="url(#e-accent-top)"/>
+      <ellipse cy="-320" rx="46" ry="10" fill="#0B0D12" opacity="0.14"/>
+    </g>
+
+    <!-- stack 4 -->
+    <g transform="translate(970 700)">
+      <ellipse cy="14" rx="82" ry="18" fill="#000" opacity="0.5" filter="url(#e-blur-sm)"/>
+      <path d="M-72 0 v-162 a72 16 0 0 0 144 0 V0 a72 16 0 0 1 -144 0 z" fill="url(#e-coin)"/>
+      <g stroke="#0B0D12" stroke-opacity="0.35" stroke-width="2" fill="none">
+        <path d="M-72 -34 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -68 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -102 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -136 a72 16 0 0 0 144 0"/>
+      </g>
+      <ellipse cy="-162" rx="72" ry="16" fill="url(#e-coin-top)"/>
+      <ellipse cy="-162" rx="46" ry="10" fill="#0B0D12" opacity="0.12"/>
+    </g>
+
+    <!-- stack 5 -->
+    <g transform="translate(1150 700)">
+      <ellipse cy="14" rx="82" ry="18" fill="#000" opacity="0.5" filter="url(#e-blur-sm)"/>
+      <path d="M-72 0 v-88 a72 16 0 0 0 144 0 V0 a72 16 0 0 1 -144 0 z" fill="url(#e-coin)"/>
+      <g stroke="#0B0D12" stroke-opacity="0.35" stroke-width="2" fill="none">
+        <path d="M-72 -30 a72 16 0 0 0 144 0"/>
+        <path d="M-72 -60 a72 16 0 0 0 144 0"/>
+      </g>
+      <ellipse cy="-88" rx="72" ry="16" fill="url(#e-coin-top)"/>
+      <ellipse cy="-88" rx="46" ry="10" fill="#0B0D12" opacity="0.12"/>
+    </g>
+  </g>
+
+  <!-- the card the spending came from -->
+  <g transform="translate(1214 372) rotate(-16)">
+    <rect x="10" y="14" width="250" height="158" rx="18" fill="#000" opacity="0.5" filter="url(#e-blur-sm)"/>
+    <rect width="250" height="158" rx="18" fill="url(#e-card)"/>
+    <rect x="1" y="1" width="248" height="156" rx="17" fill="none" stroke="#FFFFFF" stroke-opacity="0.55"/>
+    <rect x="26" y="52" width="46" height="34" rx="7" fill="#C6A44B"/>
+    <rect x="26" y="52" width="46" height="34" rx="7" fill="none" stroke="#8C7530" stroke-opacity="0.6"/>
+    <rect x="26" y="112" width="120" height="11" rx="5" fill="#14161C" opacity="0.28"/>
+    <circle cx="196" cy="118" r="20" fill="#5B76FF" opacity="0.85"/>
+    <circle cx="222" cy="118" r="20" fill="#A9B8FF" opacity="0.7"/>
+  </g>
+</svg>

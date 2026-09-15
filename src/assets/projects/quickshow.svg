@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="q-amb" cx="46%" cy="36%" r="64%">
+      <stop offset="0" stop-color="#5B76FF" stop-opacity="0.20"/>
+      <stop offset="55%" stop-color="#5B76FF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0B0D12" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="q-beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C9D2FF" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#5B76FF" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#5B76FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="q-seat-lit" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#7286FF"/>
+      <stop offset="0.55" stop-color="#4459DC"/>
+      <stop offset="1" stop-color="#1F2A8C"/>
+    </linearGradient>
+    <linearGradient id="q-seat-dark" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#39404F"/>
+      <stop offset="1" stop-color="#191D26"/>
+    </linearGradient>
+    <linearGradient id="q-ticket" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#FBFAF7"/>
+      <stop offset="1" stop-color="#BDBBB4"/>
+    </linearGradient>
+    <filter id="q-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="q-blur-sm" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0B0D12"/>
+  <rect width="1600" height="900" fill="url(#q-amb)"/>
+
+  <!-- the projector beam: light arriving from the back of the house -->
+  <path d="M120 402 L120 470 L1500 706 L1500 132 Z" fill="url(#q-beam)"/>
+  <ellipse cx="120" cy="436" rx="26" ry="26" fill="#C9D2FF" opacity="0.5" filter="url(#q-blur-sm)"/>
+
+  <ellipse cx="800" cy="754" rx="440" ry="34" fill="#000" opacity="0.6" filter="url(#q-soft)"/>
+
+  <!-- ── the row: one seat taken, the rest waiting ── -->
+  <g transform="translate(300 470)">
+    <!-- seat 1 -->
+    <g>
+      <rect x="18" y="222" width="150" height="18" rx="9" fill="#000" opacity="0.5" filter="url(#q-blur-sm)"/>
+      <path d="M26 4 h122 a20 20 0 0 1 20 20 v128 H6 V24 a20 20 0 0 1 20 -20 z" fill="url(#q-seat-dark)"/>
+      <rect x="6" y="18" width="162" height="10" rx="5" fill="#F2F1ED" opacity="0.05"/>
+      <rect x="0" y="112" width="30" height="82" rx="14" fill="url(#q-seat-dark)"/>
+      <rect x="144" y="112" width="30" height="82" rx="14" fill="url(#q-seat-dark)"/>
+      <rect x="6" y="148" width="162" height="44" rx="14" fill="#2B3240"/>
+      <rect x="6" y="148" width="162" height="9" rx="5" fill="#F2F1ED" opacity="0.07"/>
+    </g>
+
+    <!-- seat 2 — selected -->
+    <g transform="translate(200 -10)">
+      <rect x="18" y="232" width="160" height="20" rx="10" fill="#000" opacity="0.55" filter="url(#q-blur-sm)"/>
+      <ellipse cx="96" cy="236" rx="140" ry="34" fill="#5B76FF" opacity="0.28" filter="url(#q-blur-sm)"/>
+      <path d="M28 0 h128 a22 22 0 0 1 22 22 v134 H6 V22 A22 22 0 0 1 28 0 z" fill="url(#q-seat-lit)"/>
+      <path d="M28 0 h128 a22 22 0 0 1 22 22 v12 H6 V22 A22 22 0 0 1 28 0 z" fill="#FFFFFF" opacity="0.22"/>
+      <rect x="0" y="116" width="32" height="86" rx="15" fill="url(#q-seat-lit)"/>
+      <rect x="150" y="116" width="32" height="86" rx="15" fill="url(#q-seat-lit)"/>
+      <rect x="6" y="152" width="172" height="48" rx="15" fill="#3A4BC4"/>
+      <rect x="6" y="152" width="172" height="10" rx="5" fill="#FFFFFF" opacity="0.22"/>
+    </g>
+
+    <!-- seat 3 -->
+    <g transform="translate(410 0)">
+      <rect x="18" y="222" width="150" height="18" rx="9" fill="#000" opacity="0.5" filter="url(#q-blur-sm)"/>
+      <path d="M26 4 h122 a20 20 0 0 1 20 20 v128 H6 V24 a20 20 0 0 1 20 -20 z" fill="url(#q-seat-dark)"/>
+      <rect x="6" y="18" width="162" height="10" rx="5" fill="#F2F1ED" opacity="0.05"/>
+      <rect x="0" y="112" width="30" height="82" rx="14" fill="url(#q-seat-dark)"/>
+      <rect x="144" y="112" width="30" height="82" rx="14" fill="url(#q-seat-dark)"/>
+      <rect x="6" y="148" width="162" height="44" rx="14" fill="#2B3240"/>
+      <rect x="6" y="148" width="162" height="9" rx="5" fill="#F2F1ED" opacity="0.07"/>
+    </g>
+
+    <!-- seat 4 -->
+    <g transform="translate(620 0)">
+      <rect x="18" y="222" width="150" height="18" rx="9" fill="#000" opacity="0.5" filter="url(#q-blur-sm)"/>
+      <path d="M26 4 h122 a20 20 0 0 1 20 20 v128 H6 V24 a20 20 0 0 1 20 -20 z" fill="url(#q-seat-dark)"/>
+      <rect x="6" y="18" width="162" height="10" rx="5" fill="#F2F1ED" opacity="0.05"/>
+      <rect x="0" y="112" width="30" height="82" rx="14" fill="url(#q-seat-dark)"/>
+      <rect x="144" y="112" width="30" height="82" rx="14" fill="url(#q-seat-dark)"/>
+      <rect x="6" y="148" width="162" height="44" rx="14" fill="#2B3240"/>
+      <rect x="6" y="148" width="162" height="9" rx="5" fill="#F2F1ED" opacity="0.07"/>
+    </g>
+  </g>
+
+  <!-- ── the ticket that claimed the seat ── -->
+  <g transform="translate(1092 236) rotate(-13)">
+    <rect x="12" y="16" width="330" height="176" rx="20" fill="#000" opacity="0.5" filter="url(#q-blur-sm)"/>
+    <path d="M20 0 h296 a20 20 0 0 1 20 20 v52 a22 22 0 0 0 0 44 v52 a20 20 0 0 1 -20 20 H20 a20 20 0 0 1 -20 -20 v-52 a22 22 0 0 0 0 -44 V20 A20 20 0 0 1 20 0 z"
+          fill="url(#q-ticket)"/>
+    <path d="M20 1 h296 a19 19 0 0 1 19 19 v52 a22 22 0 0 0 0 44 v52 a19 19 0 0 1 -19 19 H20 a19 19 0 0 1 -19 -19 v-52 a22 22 0 0 0 0 -44 V20 A19 19 0 0 1 20 1 z"
+          fill="none" stroke="#FFFFFF" stroke-opacity="0.6"/>
+    <line x1="252" y1="22" x2="252" y2="166" stroke="#14161C" stroke-opacity="0.22" stroke-width="3" stroke-dasharray="10 10"/>
+    <rect x="34" y="38" width="118" height="15" rx="7" fill="#14161C" opacity="0.75"/>
+    <rect x="34" y="66" width="80" height="10" rx="5" fill="#14161C" opacity="0.3"/>
+    <rect x="34" y="112" width="54" height="26" rx="13" fill="#5B76FF"/>
+    <rect x="100" y="112" width="86" height="26" rx="13" fill="#14161C" opacity="0.12"/>
+    <g fill="#14161C" opacity="0.5">
+      <rect x="276" y="44" width="5" height="100"/>
+      <rect x="286" y="44" width="3" height="100"/>
+      <rect x="294" y="44" width="6" height="100"/>
+      <rect x="305" y="44" width="3" height="100"/>
+      <rect x="313" y="44" width="5" height="100"/>
+    </g>
+  </g>
+</svg>
