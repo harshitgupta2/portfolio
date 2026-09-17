@@ -18,7 +18,7 @@ export const site = {
   github: 'https://github.com/harshitgupta2',
 
   // Served from /public. Drop your resume.pdf there.
-  resume: 'https://drive.google.com/file/d/18XKppYX_IIGyEgQ0brhQ8ry_PMSnufkx/view?usp=drive_link',
+  resume: 'https://drive.google.com/file/d/18XKppYX_IIGyEgQ0brhQ8ry_PMSnufkx/view?usp=sharing',
 
   headline: 'Building digital experiences that solve real problems.',
   intro:
